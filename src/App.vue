@@ -1,9 +1,5 @@
 <template>
     <div id="app">
-        <!-- <h1>count: {{count}}</h1>
-        <div>
-            <button @click="countIncrease">点我</button>
-        </div>-->
         <router-view></router-view>
     </div>
 </template>
@@ -17,11 +13,7 @@ export default {
             return this.$store.state.count;
         }
     },
-    methods: {
-        countIncrease() {
-            this.$store.commit("countIncrease", 100);
-        }
-    }
+    methods: {}
 };
 </script>
 
